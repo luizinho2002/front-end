@@ -1,0 +1,487 @@
+Aprenda HTML criando um aplicativo de fotos de gatos
+
+<!-- Passo 1 -->
+Os elementos HTML possuem tags de abertura como <h1> e tags de fechamento como </h1>.
+
+O texto de um elemento fica entre suas tags de abertura e fechamento.
+
+Encontre o elemento h1 e altere seu texto para:
+
+CatPhotoApp
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 2 -->
+Os elementos de cabeçalho h1 a h6 são usados ​​para indicar a importância do conteúdo abaixo deles. Quanto menor o número, maior a importância, portanto os elementos h2 têm menos importância que os elementos h1. Use apenas um elemento h1 por página e coloque os títulos de menor importância abaixo dos títulos de maior importância.
+
+Abaixo do elemento h1, adicione um elemento h2 com este texto:
+
+Fotos de gatos
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 3 -->
+O elemento p é usado para criar um parágrafo de texto em sites. Crie um elemento p abaixo do seu elemento h2 e forneça o seguinte texto:
+
+Veja mais fotos de gatos em nossa galeria.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!-- Passo 4 -->
+Os comentários permitem que você deixe mensagens sem afetar a exibição do navegador. Também permite tornar o código inativo. Um comentário em HTML começa com <!--, contém qualquer número de linhas de texto e termina com -->. Por exemplo, o comentário <!-- TODO: Remove h1 --> contém o texto TODO: Remove h1.
+
+Adicione um comentário acima do elemento p com este texto:
+
+TODO: Adicionar link para fotos de gatos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 5 -->
+HTML5 possui alguns elementos que identificam diferentes áreas de conteúdo. Esses elementos tornam seu HTML mais fácil de ler e ajudam na otimização de mecanismos de pesquisa (SEO) e na acessibilidade.
+
+Identifique a seção principal desta página adicionando uma tag de abertura <main> antes do elemento h1 e uma tag de fechamento </main> após o elemento p.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 6 -->
+Na etapa anterior, você colocou os elementos h1, h2, comment e p dentro do elemento principal. Isso é chamado de aninhamento. Os elementos aninhados devem ser colocados dois espaços à direita do elemento em que estão aninhados. Esse espaçamento é chamado de recuo e é usado para tornar o HTML mais fácil de ler.
+
+O elemento h1, o elemento h2 e o comentário são recuados dois espaços a mais que o elemento principal no código abaixo. Use a barra de espaço do teclado para adicionar mais dois espaços na frente do elemento p para que ele também seja recuado corretamente.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 7 -->
+Você pode adicionar imagens ao seu site usando o elemento img. Os elementos img possuem uma tag de abertura sem uma tag de fechamento. Uma tag para um elemento sem tag de fechamento é conhecida como tag de fechamento automático.
+
+Adicione um elemento img abaixo do elemento p. Neste ponto, nenhuma imagem aparecerá no navegador.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 8 -->
+Atributos HTML são palavras especiais usadas dentro da tag de abertura de um elemento para controlar o comportamento do elemento. O atributo src em um elemento img especifica o URL da imagem (onde a imagem está localizada).
+
+Aqui está um exemplo de um elemento img com um atributo src apontando para o logotipo freeCodeCamp:
+
+Dentro do elemento img existente, adicione um atributo src com este URL:
+
+https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 9 -->
+Todos os elementos img devem ter um atributo alt. O texto do atributo alt é usado por leitores de tela para melhorar a acessibilidade e é exibido se a imagem falhar ao carregar. Por exemplo, <img src="cat.jpg" alt="A cat"> possui um atributo alt com o texto A cat.
+
+Dentro do elemento img, adicione um atributo alt com este texto:
+
+Um lindo gato laranja deitado de costas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 10 -->
+Você pode vincular a outra página com o elemento âncora (a). Por exemplo, <a href='https://freecodecamp.org'></a> teria um link para freecodecamp.org.
+
+Adicione um elemento âncora após o parágrafo vinculado a https://freecatphotoapp.com. Neste ponto, o link não aparecerá na visualização.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 11 -->
+O texto de um link deve ser colocado entre as tags de abertura e fechamento de um elemento âncora (a). Por exemplo, <a href="https://www.freecodecamp.org">clique aqui para acessar freeCodeCamp.org</a> é um link com o texto clique aqui para acessar freeCodeCamp.org.
+
+Adicione o link de texto âncora para imagens de gatos ao elemento âncora. Este se tornará o texto do link.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 12 -->
+Na etapa anterior, você transformou as palavras link para imagens de gatos em um link, colocando-as entre as tags de abertura e fechamento da âncora (a). Você pode fazer o mesmo com palavras dentro de um elemento, como um elemento p.
+
+No texto do seu elemento p, transforme as palavras cat photos em um link para https://freecatphotoapp.com adicionando tags de abertura e fechamento de âncora (a) ao redor dessas palavras.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 13 -->
+Agora que você transformou o texto cat photos dentro do elemento p em um link, você não precisa do segundo link abaixo do elemento p. Exclua todo o elemento âncora abaixo do elemento p.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 14 -->
+Adicione um atributo de destino com o valor _blank à tag de abertura do elemento âncora (a), para que o link seja aberto em uma nova aba.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 15 -->
+Nas etapas anteriores você usou um elemento âncora para transformar o texto em um link. Outros tipos de conteúdo também podem ser transformados em links, envolvendo-os em tags âncora.
+
+Transforme a imagem em um link cercando-a com as tags dos elementos necessários. Use https://freecatphotoapp.com como valor do atributo href da âncora.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 16 -->
+Antes de adicionar qualquer novo conteúdo, você deve usar um elemento de seção para separar o conteúdo das fotos de gatos do conteúdo futuro.
+
+Pegue seus elementos h2, comment, p e âncora (a) e aninhe-os em um elemento de seção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 17 -->
+É hora de adicionar uma nova seção. Adicione um segundo elemento de seção abaixo do elemento de seção existente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 18 -->
+No segundo elemento de seção, adicione um novo elemento h2 com o texto Cat Lists.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 19 -->
+Quando você adiciona um elemento de título de classificação inferior à página, fica implícito que você está iniciando uma nova subseção.
+
+Após o último elemento h2 do segundo elemento de seção, adicione um elemento h3 com este texto:
+
+Coisas que os gatos adoram:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 20 -->
+Após o elemento h3 com o texto Things cats love:, adicione um elemento de lista não ordenada (ul). Observe que nada será exibido neste momento.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 21 -->
+Use elementos de item de lista (li) para criar itens em uma lista. Aqui está um exemplo de itens de lista em uma lista não ordenada:
+
+<ul>
+  <li>leite</li>
+  <li>queijo</li>
+</ul>
+
+Dentro do elemento ul aninhe três itens de lista para exibir três coisas que os gatos adoram:
+
+cat nip - laser pointers - lasagna
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 22 -->
+Após a lista não ordenada, adicione uma nova imagem com um valor de atributo src definido como:
+
+https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg
+
+E seu valor de atributo alt para:
+
+Uma fatia de lasanha num prato.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 23 -->
+O elemento figure representa conteúdo independente e permitirá associar uma imagem a uma legenda.
+
+Aninhe a imagem que você acabou de adicionar em um elemento de figura.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 24 -->
+Um elemento de legenda de figura (figcaption) é usado para adicionar uma legenda para descrever a imagem contida no elemento de figura. Por exemplo, <figcaption>Um gato fofo</figcaption> adiciona a legenda Um gato fofo.
+
+Após a imagem aninhada no elemento figure, adicione um elemento figcaption com o texto definido como:
+
+Os gatos adoram lasanha.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 25 -->
+Enfatize a palavra amor no elemento figcaption envolvendo-a em um elemento de ênfase.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 26 -->
+Após o elemento figure, adicione outro elemento h3 com o texto:
+
+As 3 principais coisas que os gatos odeiam:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 27 -->
+O código de uma lista ordenada (ol) é semelhante a uma lista não ordenada, mas os itens de uma lista ordenada são numerados quando exibidos.
+
+Após o último elemento h3 do segundo elemento de seção, adicione uma lista ordenada com estes três itens de lista:
+
+tratamento contra pulgas trovão outros gatos
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 28 -->
+Após a lista ordenada, adicione outro elemento de figura.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 29 -->
+Dentro do elemento figure que você acabou de adicionar, aninhe um elemento img com um atributo src definido como https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 30 -->
+Para melhorar a acessibilidade da imagem adicionada, adicione um atributo alt ao texto:
+
+Cinco gatos olhando ao redor de um campo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 31 -->
+Após o último elemento img, adicione um elemento figcaption com o texto Gatos odeiam outros gatos.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 32 -->
+O elemento <strong> é utilizado para indicar que algum texto é de grande importância ou urgente.
+
+Na legenda que você acabou de adicionar, indique que o ódio é de grande importância, envolvendo-o em um elemento forte.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 33 -->
+É hora de adicionar uma nova seção. Adicione um terceiro elemento de seção abaixo do segundo elemento de seção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 34 -->
+Dentro do terceiro elemento de seção, adicione um elemento h2 com o texto:
+
+Forma de gato
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 35 -->
+Agora você adicionará um formulário da web para coletar informações dos usuários.
+
+Após o título Cat Form, adicione um elemento de formulário.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 36 -->
+O atributo action indica para onde os dados do formulário devem ser enviados. Por exemplo, <form action="/submit-url"></form> informa ao navegador que os dados do formulário devem ser enviados para o caminho /submit-url.
+
+Adicione um atributo de ação com o valor https://freecatphotoapp.com/submit-cat-photo ao elemento do formulário.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 37 -->
+O elemento input permite várias maneiras de coletar dados de um formulário da web. Assim como os elementos img, os elementos input fecham automaticamente e não precisam de tags de fechamento.
+
+Aninhe um elemento de entrada no elemento de formulário
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 38 -->
+Existem muitos tipos de entradas que você pode criar usando o atributo type. Você pode criar facilmente um campo de senha, um botão de redefinição ou um controle para permitir que os usuários selecionem um arquivo em seus computadores.
+
+Crie um campo de texto para obter entrada de texto de um usuário adicionando o atributo type com o valor text ao elemento input.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 39 -->
+Para que os dados de um formulário sejam acessados pelo local especificado no atributo action, você deve atribuir ao campo de texto um atributo name e atribuir a ele um valor para representar os dados que estão sendo enviados. Por exemplo, você pode usar a seguinte sintaxe para um campo de texto de endereço de email: <input type="text" name="email">.
+
+Adicione o atributo name com o valor catphotourl ao seu campo de texto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 40 -->
+O texto de espaço reservado é usado para dar às pessoas uma dica sobre que tipo de informação inserir em uma entrada. Por exemplo, <input type="text" placeholder="Endereço de email">.
+
+Adicione o URL da foto do gato com texto de espaço reservado ao seu elemento de entrada.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 41 -->
+Para evitar que um usuário envie seu formulário quando faltam informações obrigatórias, você precisa adicionar o atributo obrigatório a um elemento de entrada. Não há necessidade de definir um valor para o atributo obrigatório. Em vez disso, basta adicionar a palavra necessária ao elemento de entrada, certificando-se de que haja espaço entre ele e outros atributos.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 42 -->
+Use o elemento button para criar um botão clicável. Por exemplo, <button>Clique Aqui</button> cria um botão com o texto Clique Aqui.
+
+Adicione um elemento de botão com o texto Enviar abaixo do elemento de entrada. O comportamento padrão de clicar em um botão de formulário sem nenhum atributo envia o formulário para o local especificado no atributo action do formulário.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 43 -->
+Mesmo que você tenha adicionado seu botão abaixo da entrada de texto, eles aparecem um ao lado do outro na página. Isso ocorre porque os elementos input e button são elementos inline, que não aparecem em novas linhas.
+
+O botão que você adicionou enviará o formulário por padrão. No entanto, confiar no comportamento padrão pode causar confusão. Adicione o atributo type com o valor submit ao botão para deixar claro que é um botão de envio.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 44 -->
+elementos de rótulo são usados para ajudar a associar o texto de um elemento de entrada ao próprio elemento de entrada (especialmente para tecnologias assistivas como leitores de tela). Por exemplo, <label><input type="radio"> cat</label> faz com que clicar na palavra cat também selecione o botão de opção correspondente.
+
+Aninhe seu botão de opção dentro de um elemento de rótulo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 45 -->
+elementos de rótulo são usados para ajudar a associar o texto de um elemento de entrada ao próprio elemento de entrada (especialmente para tecnologias assistivas como leitores de tela). Por exemplo, <label><input type="radio"> cat</label> faz com que clicar na palavra cat também selecione o botão de opção correspondente.
+
+Aninhe seu botão de opção dentro de um elemento de rótulo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 46 -->
+O atributo id é usado para identificar elementos HTML específicos. O valor de cada atributo id deve ser exclusivo de todos os outros valores de id para a página inteira.
+
+Adicione um atributo id com o valor indoor ao botão de opção. Quando os elementos possuem múltiplos atributos, a ordem dos atributos não importa.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 47 -->
+Crie outro botão de opção abaixo do primeiro. Aninhe-o dentro de um elemento de rótulo com Exterior como texto do rótulo. Dê ao botão de opção um atributo id com outdoor como valor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 48 -->
+Observe que ambos os botões de opção podem ser selecionados ao mesmo tempo. Para que a seleção de um botão de opção desmarque automaticamente o outro, ambos os botões devem ter um atributo de nome com o mesmo valor.
+
+Adicione o atributo name com o valor indoor-outdoor a ambos os botões de opção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 49 -->
+Se você selecionar o botão de opção Interno e enviar o formulário, os dados do formulário do botão serão baseados em seus atributos de nome e valor. Como seus botões de opção não possuem um atributo de valor, os dados do formulário incluirão indoor-outdoor=on, o que não é útil quando você tem vários botões.
+
+Adicione um atributo de valor a ambos os botões de opção. Por conveniência, defina o atributo value do botão com o mesmo valor de seu atributo id.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 50 -->
+O elemento fieldset é usado para agrupar entradas e rótulos relacionados em um formulário da web. Os elementos fieldset são elementos de nível de bloco, o que significa que aparecem em uma nova linha.
+
+Aninhe os botões de opção Interno e Externo em um elemento fieldset e não se esqueça de recuar os botões de opção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 51 -->
+O elemento legend atua como uma legenda para o conteúdo do elemento fieldset. Fornece aos usuários contexto sobre o que eles devem inserir nessa parte do formulário.
+
+Adicione um elemento de legenda com o texto O seu gato é um gato de interior ou de exterior? acima de ambos os botões de opção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 52 -->
+A seguir, você adicionará alguns novos elementos de entrada do formulário, então adicione outro elemento fieldset diretamente abaixo do elemento fieldset atual.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 53 -->
+Adicione um elemento de legenda com o texto Qual é a personalidade do seu gato? dentro do segundo elemento fieldset.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 54 -->
+Os formulários geralmente usam caixas de seleção para perguntas que podem ter mais de uma resposta. Por exemplo, aqui está uma caixa de seleção com a opção de tacos: <input type="checkbox"> tacos.
+
+No elemento de legenda que você acabou de adicionar, adicione uma entrada com seu atributo type definido como caixa de seleção e dê a opção de:
+
+Amoroso
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 55 -->
+Adicione um atributo id com o valor amoroso à entrada da caixa de seleção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 56 -->
+Existe outra maneira de associar o texto de um elemento de entrada ao próprio elemento. Você pode aninhar o texto em um elemento de rótulo e adicionar um atributo for com o mesmo valor do atributo id do elemento de entrada.
+
+Associe o texto Loving à caixa de seleção aninhando apenas o texto Loving em um elemento de rótulo e atribuindo a ele um atributo for apropriado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 57 -->
+Adicione o atributo name com o valor personalidade ao elemento de entrada da caixa de seleção.
+
+Embora você não perceba isso no navegador, isso torna mais fácil para um servidor processar seu formulário da web, especialmente quando há várias caixas de seleção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 58 -->
+Adicione outra caixa de seleção após aquela que você acabou de adicionar. O valor do atributo id deve ser lento e o valor do atributo name deve ser igual à última caixa de seleção.
+
+Adicione também um elemento de rótulo à direita da nova caixa de seleção com o texto Preguiçoso. Certifique-se de associar o elemento label à nova caixa de seleção usando o atributo for.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 59 -->
+Adicione uma caixa de seleção final após a anterior com um valor de atributo id energético. O atributo name deve ser igual à caixa de seleção anterior.
+
+Adicione também um elemento de rótulo à direita da nova caixa de seleção com o texto Energético. Certifique-se de associar o elemento label à nova caixa de seleção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 60 -->
+Assim como os botões de opção, os dados do formulário para as caixas de seleção selecionadas são pares de atributos nome/valor. Embora o atributo value seja opcional, é uma prática recomendada incluí-lo em qualquer caixa de seleção ou botão de opção na página.
+
+Adicione um atributo de valor a cada caixa de seleção. Por conveniência, defina o atributo value de cada caixa de seleção com o mesmo valor de seu atributo id.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 61 -->
+Para marcar uma caixa de seleção ou um botão de opção selecionado por padrão, você precisa adicionar o atributo marcado a ele. Não há necessidade de definir um valor para o atributo verificado. Em vez disso, basta adicionar a palavra verificada ao elemento de entrada, certificando-se de que haja espaço entre ela e outros atributos.
+
+Marque o primeiro botão de opção e a primeira caixa de seleção por padrão.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 62 -->
+Agora você adicionará uma seção de rodapé à página.
+
+Após o elemento principal, adicione um elemento de rodapé.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 63 -->
+Aninhe um elemento p com o texto No Copyright - freeCodeCamp.org no elemento de rodapé.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 64 -->
+Transforme o texto existente do freeCodeCamp.org em um link, colocando-o em um elemento âncora (a). O atributo href deve ser definido como https://www.freecodecamp.org.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 65 -->
+Observe que tudo o que você adicionou à página até agora está dentro do elemento body. Todos os elementos de conteúdo da página que devem ser renderizados na página vão dentro do elemento body. No entanto, outras informações importantes ficam dentro do elemento head.
+
+Adicione um elemento head acima do elemento body.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 66 -->
+O elemento title determina o que os navegadores mostram na barra de título ou guia da página.
+
+Adicione um elemento title dentro do elemento head usando o texto abaixo:
+
+CatPhotoApp
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 67 -->
+Observe que todo o conteúdo da página está aninhado em um elemento html. Todos os outros elementos devem ser descendentes deste elemento HTML.
+
+Adicione o atributo lang com o valor en à tag html de abertura para especificar que o idioma da página é o inglês.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 68 -->
+Todas as páginas devem começar com <!DOCTYPE html>. Essa string especial é conhecida como declaração e garante que o navegador tente atender às especificações de todo o setor.
+
+Adicione esta declaração como a primeira linha do código.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 69 -->
+
+Você pode definir o comportamento do navegador adicionando metaelementos de fechamento automático no cabeçalho. Aqui está um exemplo:
+
+<meta atributo = "valor">
+
+Diga ao navegador para analisar a marcação em vários idiomas, criando um metaelemento como filho do elemento head. Defina seu atributo charset como UTF-8.

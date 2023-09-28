@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulário de Registro</h1>
+    <p>Por favor preencha esse formulário com informações necessárias:</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="first-name">Digite seu primeiro nome: <input id="first-name" type="text" name="first-name"
+                    required></label>
+            <label for="last-name">Digite seu sobrenome: <input id="last-name" type="text" name="last-name"
+                    required></label>
+            <label for="email">Digite seu e-mail: <input id="email" type="email" name="email" required></label>
+            <label for="new-password">Crie uma nova senha: <input id="new-password" type="password" name="password"
+                    required pattern="[a-z0-5]{8,}"></label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input id="personal-account" class="inline" type="radio" name="account-type"> Conta
+                pessoal</label>
+            <label for="businees-account"><input id="businees-account" class="inline" type="radio" name="account-type"> Conta
+                empresarial</label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" class="inline" type="checkbox"
+                    name="terms-and-conditions" required> Eu aceito os <a
+                    href="https://www.freecodecam.org/news/terms-of-service/" target="_blank">termos e
+                    condições</a></label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Carregue uma foto de perfil: <input type="file" name="file" id="profile-picture"></label>
+            <label for="age">Insira sua idade: <input id="age" type="number" name="age" min="13" max="120"></label>
+            <label for="referrer">Como você ouvir falar de nós?
+                <select name="referrer" id="referrer">
+                    <option  selected disabled value="">Selecione</option>
+                    <option value="1">freeCodeCamp Notícias</option>
+                    <option value="2">Canal freeCodeCamp no Youtube</option>
+                    <option value="3">Fórum freeCodeCamp</option>
+                    <option value="4">Outros</option>
+                </select>
+            </label>
+            <label for="biography">Forneça uma briografia:
+                <textarea name="bio" id="birography" cols="30" rows="3"
+                    placeholder="Eu amo programar na praia..."></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

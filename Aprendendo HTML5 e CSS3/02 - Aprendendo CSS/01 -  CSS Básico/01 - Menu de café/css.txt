@@ -1,0 +1,546 @@
+<!-- Passo 1 -->
+Como você aprendeu nas últimas etapas do Cat Photo App, existe uma estrutura básica necessária para começar a construir sua página web.
+
+Adicione a tag <!DOCTYPE html> e um elemento html com um atributo lang en.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 2 -->
+Adicione um elemento head dentro do elemento html, para que você possa adicionar um elemento title. O texto do elemento do título deve ser Menu Café.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 3 -->
+O título é um dos vários elementos que fornecem informações extras não visíveis na página web, mas é útil para os motores de busca ou para a forma como a página é exibida.
+
+Dentro do elemento head, aninhe um metaelemento com um atributo chamado charset definido com o valor utf-8 para informar ao navegador como codificar caracteres para a página. Observe que os metaelementos fecham automaticamente.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 4 -->
+Para se preparar para criar algum conteúdo real, adicione um elemento body abaixo do elemento head.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 5 -->
+É hora de adicionar algum conteúdo ao menu. Adicione um elemento principal dentro do elemento body existente. Eventualmente conterá informações sobre preços de café e sobremesas oferecidos pelo café.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 6 -->
+O nome do café é CAMPER CAFE. Adicione um elemento h1 ao seu elemento principal. Dê o nome do café em letras maiúsculas para destacá-lo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 7 -->
+Para que os visitantes saibam que o café foi fundado em 2020, adicione um elemento p abaixo do elemento h1 com o texto Est. 2020.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 8 -->
+Haverá duas seções no cardápio, uma para cafés e outra para sobremesas. Adicione um elemento de seção dentro do elemento principal para ter um local para colocar todos os cafés disponíveis.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 9 -->
+Crie um elemento h2 no elemento de seção e atribua a ele o texto Café.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 10 -->
+Até agora, você estava limitado quanto à apresentação e aparência do conteúdo que cria. Para começar a assumir o controle, adicione um elemento de estilo ao elemento head.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 11 -->
+Você pode adicionar estilo a um elemento especificando-o no elemento style e definindo uma propriedade para ele assim:
+
+elemento {
+ valor da propriedade;
+}
+
+Centralize seu elemento h1 definindo sua propriedade text-align como o valor central.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 12 -->
+Na etapa anterior, você usou um seletor de tipo para estilizar o elemento h1. Centralize os elementos h2 e p adicionando um novo seletor de tipo para cada um deles ao elemento de estilo existente.
+ 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 13 -->
+Agora você tem três seletores de tipo com exatamente o mesmo estilo. Você pode adicionar o mesmo grupo de estilos a vários elementos criando uma lista de seletores. Cada seletor é separado por vírgulas como esta:
+
+seletor1, seletor2 {
+  valor da propriedade;
+}
+
+Exclua os três seletores de tipo existentes e substitua-os por uma lista de seletores que centralize o texto dos elementos h1, h2 e p.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 14 -->
+Você estilizou três elementos escrevendo CSS dentro das tags de estilo. Isso funciona, mas como haverá muito mais estilos, é melhor colocar todos os estilos em um arquivo separado e vincular a ele.
+
+Criamos um arquivo estilos.css separado para você e mudamos a visualização do editor para esse arquivo. Você pode alternar entre arquivos com as guias na parte superior do editor.
+
+Comece reescrevendo os estilos que você criou no arquivo estilos.css. Certifique-se de excluir as tags de estilo de abertura e fechamento.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 15 -->
+Agora que você tem o CSS no arquivo estilos.css, vá em frente e remova o elemento de estilo e todo o seu conteúdo. Depois de removido, o texto centralizado voltará para a esquerda.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 16 -->
+Agora você precisa vincular o arquivo estilos.css para que os estilos sejam aplicados novamente. Aninhe um elemento de link de fechamento automático no elemento head. Dê a ele uma folha de estilo de valor de atributo rel e um valor de atributo href de estilos.css.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 17 -->
+Para que o estilo da página seja semelhante em dispositivos móveis e em um desktop ou laptop, você precisa adicionar um metaelemento com um atributo de conteúdo especial.
+
+Adicione o seguinte no elemento head:
+
+<meta name="viewport" content="largura=largura do dispositivo, escala inicial=1,0" />
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 18 -->
+O texto é centralizado novamente para que o link para o arquivo CSS funcione. Adicione outro estilo ao arquivo que altere a propriedade background-color para marrom para o elemento body.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 19 -->
+Esse fundo marrom dificulta a leitura do texto. Altere a cor de fundo do elemento body para burlywood para que tenha alguma cor, mas você ainda consiga ler o texto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 20 -->
+O elemento div é usado principalmente para fins de layout de design, ao contrário de outros elementos de conteúdo que você usou até agora. Adicione um elemento div dentro do elemento body e mova todos os outros elementos dentro do novo div.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 21 -->
+O objetivo agora é fazer com que a div não ocupe toda a largura da página. A propriedade CSS width é perfeita para isso. Crie um novo seletor de tipo na folha de estilo que dê ao seu elemento div uma largura de 300px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 22 -->
+Os comentários em CSS são assim:
+
+/* comente aqui */
+
+Na sua folha de estilos, comente a linha que contém a propriedade e o valor background-color, para que você possa ver o efeito de estilizar apenas o elemento div. Isso tornará o fundo branco novamente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 23 -->
+Agora use o seletor div existente para definir a cor de fundo do elemento div como burlywood.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 24 -->
+Agora é fácil ver que o texto está centralizado dentro do elemento div. Atualmente, a largura do elemento div é especificada em pixels (px). Altere o valor da propriedade width para 80%, para torná-la 80% da largura de seu elemento pai (corpo).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 25 -->
+Em seguida, você deseja centralizar o div horizontalmente. Você pode fazer isso definindo suas propriedades margin-left e margin-right como auto. Pense na margem como um espaço invisível ao redor de um elemento. Usando essas duas propriedades de margem, centralize o elemento div dentro do elemento body.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 26 -->
+Até agora você tem usado seletores de tipo para estilizar elementos. Um seletor de classe é definido por um nome com um ponto diretamente na frente dele, assim:
+
+.nome da classe {
+  estilos
+}
+
+Mude o seletor div existente para um seletor de classe substituindo div por uma classe chamada menu.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 27 -->
+Para aplicar o estilo da classe ao elemento div, adicione um atributo de classe à tag de abertura do elemento div e defina seu valor como menu.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 28 -->
+Como o principal produto à venda do café é o café, você pode usar uma imagem de grãos de café no fundo da página.
+
+Exclua o comentário e seu conteúdo dentro do seletor de tipo de corpo. Agora adicione uma propriedade background-image e defina seu valor como url (https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 29 -->
+Parece bom. É hora de começar a adicionar alguns itens de menu. Adicione um elemento de artigo vazio sob o título Café. Ele conterá o sabor e o preço de cada café que você oferece atualmente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 30 -->
+Os elementos do artigo geralmente contêm vários elementos que possuem informações relacionadas. Nesse caso, conterá um sabor de café e um preço para esse sabor. Aninhe dois elementos p dentro do seu elemento de artigo. O texto do primeiro deve ser French Vanilla, e o texto do segundo 3,00.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 31 -->
+Começando abaixo do par café/preço existente, adicione o café e os preços a seguir usando elementos de artigo com dois elementos p aninhados dentro de cada um. Como antes, o texto do primeiro elemento p deve conter o sabor do café e o texto do segundo elemento p deve conter o preço.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 32 -->
+Os sabores e preços estão atualmente empilhados uns sobre os outros e centralizados com seus respectivos elementos p. Seria bom se o sabor estivesse à esquerda e o preço à direita.
+
+Adicione o sabor do nome da classe ao elemento French Vanilla p.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 33 -->
+Usando sua nova classe de sabor como seletor, defina o valor da propriedade text-align para a esquerda.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 34 -->
+Em seguida, você deseja alinhar o preço à direita. Adicione uma classe chamada price ao seu elemento p que tenha 3,00 como texto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 35 -->
+Agora alinhe o texto à direita dos elementos com a classe de preço.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 36 -->
+É isso que você quer, mas agora seria bom se o sabor e o preço estivessem na mesma linha. Os elementos p são elementos de nível de bloco, portanto, ocupam toda a largura de seu elemento pai.
+
+Para colocá-los na mesma linha, você precisa aplicar algum estilo aos elementos p para que eles se comportem mais como elementos embutidos. Para fazer isso, comece adicionando um atributo de classe com o item de valor ao primeiro elemento do artigo sob o título Café.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 37 -->
+Os elementos p estão aninhados em um elemento de artigo com o atributo de classe de item. Você pode estilizar todos os elementos p aninhados em qualquer lugar nos elementos com uma classe chamada item como este:
+
+.item p { }
+
+Usando o seletor acima, adicione uma propriedade display com valor inline-block para que os elementos p se comportem mais como elementos inline.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 38 -->
+Está mais perto, mas o preço não ficou à direita. Isso ocorre porque os elementos do bloco embutido ocupam apenas a largura de seu conteúdo. Para distribuí-los, adicione uma propriedade de largura aos seletores de classe de sabor e preço que possuem um valor de 50% cada.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 39 -->
+Bem, isso não funcionou. Estilizar os elementos p como inline-block e colocá-los em linhas separadas no código cria um espaço extra à direita do primeiro elemento p, fazendo com que o segundo mude para a próxima linha. Uma maneira de corrigir isso é fazer com que a largura de cada elemento p seja um pouco menor que 50%.
+
+Altere o valor da largura para 49% para cada classe para ver o que acontece.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 40 -->
+Funcionou, mas ainda há um pouco de espaço à direita do preço.
+
+Você pode continuar tentando várias porcentagens para as larguras. Em vez disso, use a tecla backspace do teclado para mover o elemento p com o preço da classe próximo ao elemento p com o sabor da classe para que eles fiquem na mesma linha no editor. Certifique-se de que não haja espaço entre eles.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 41 -->
+Agora vá em frente e altere a largura das classes de sabor e preço para 50% novamente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 42 -->
+Agora que você sabe que funciona, você pode alterar os elementos restantes do artigo e p para corresponder ao primeiro conjunto. Comece adicionando o item de classe aos outros elementos do artigo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 43 -->
+Em seguida, posicione os outros p elementos na mesma linha, sem espaço entre eles.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 44 -->
+Para completar o estilo, adicione os nomes de classe aplicáveis, sabor e preço, a todos os p elementos restantes.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 45 -->
+Se você diminuir a largura da visualização da página, notará em algum momento que parte do texto à esquerda começa a passar para a próxima linha. Isso ocorre porque a largura dos p elementos do lado esquerdo pode ocupar apenas 50% do espaço.
+
+Como você sabe que os preços à direita têm significativamente menos caracteres, altere o valor da largura da classe de sabor para 75% e o valor da largura da classe de preço para 25%.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 46 -->
+Você voltará a estilizar o menu em algumas etapas, mas por enquanto, vá em frente e adicione um segundo elemento de seção abaixo do primeiro para exibir as sobremesas oferecidas pelo café.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 47 -->
+Adicione um elemento h2 na nova seção e dê a ele o texto Sobremesas.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 48 -->
+Adicione um elemento de artigo vazio sob o título Sobremesas. Dê a ele um atributo de classe com o item de valor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 49 -->
+Aninhe dois elementos p dentro do seu elemento de artigo. O texto do primeiro deve ser Donut, e o texto do segundo 1,50. Coloque os dois na mesma linha, certificando-se de que não haja espaço entre eles.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 50 -->
+Para os dois elementos p que você acabou de adicionar, adicione sobremesa como o valor do atributo de classe do primeiro elemento p e o valor preço como o atributo de classe do segundo elemento p.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 51 -->
+Algo não parece certo. Você adicionou o valor correto do atributo de classe ao elemento p com Donut como texto, mas não definiu um seletor para ele.
+
+A regra CSS para a classe de sabor já define as propriedades desejadas. Adicione a classe sobremesa como um seletor adicional para esta regra CSS.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 52 -->
+Abaixo da sobremesa que você acabou de adicionar, adicione o restante das sobremesas e dos preços usando mais três elementos de artigo, cada um com dois elementos p aninhados. Cada elemento deve ter o texto correto de sobremesa e preço, e todos eles devem ter as classes corretas.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 53 -->
+Você pode dar ao seu menu algum espaço entre o conteúdo e as laterais com várias propriedades de preenchimento.
+
+Dê à classe de menu um padding-left e um padding-right com o mesmo valor 20px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 54 -->
+Isso parece melhor. Agora tente adicionar o mesmo preenchimento de 20px na parte superior e inferior do menu.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 55 -->
+Como todos os 4 lados do menu têm o mesmo espaçamento interno, vá em frente e exclua as quatro propriedades e use uma única propriedade de preenchimento com o valor 20px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 56 -->
+A largura atual do menu sempre ocupará 80% da largura do elemento body. Numa tela bem ampla, o café e a sobremesa aparecem distantes de seus preços.
+
+Adicione uma propriedade max-width à classe de menu com um valor de 500px para evitar que ela cresça muito.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 57 -->
+Você pode alterar a família de fontes do texto para torná-lo diferente da fonte padrão do seu navegador. Cada navegador possui algumas fontes comuns disponíveis.
+
+Altere todo o texto do seu corpo, adicionando uma propriedade font-family com o valor sans-serif. Esta é uma fonte bastante comum e muito legível.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 58 -->
+É um pouco chato que todo o texto tenha a mesma família de fontes. Você ainda pode ter a maior parte do texto sem serifa e diferenciar apenas os elementos h1 e h2 usando um seletor diferente.
+
+Estilize os elementos h1 e h2 para que apenas o texto desses elementos use a fonte Impact.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 59 -->
+Você pode adicionar um valor substituto para a família de fontes adicionando outro nome de fonte separado por vírgula. Fallbacks são usados em casos onde o inicial não é encontrado/disponível.
+
+Adicione a fonte serifada substituta após a fonte Impact
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 60 -->
+Faça o Est. Texto de 2020 em itálico criando um seletor de classe estabelecido e atribuindo a ele a propriedade font-style com o valor em itálico.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 61 -->
+Agora aplique a classe estabelecida ao Est. Texto de 2020.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 62 -->
+A tipografia dos elementos do título (por exemplo, h1, h2) é definida pelos valores padrão dos navegadores dos usuários.
+
+Adicione dois novos seletores de tipo (h1 e h2). Use a propriedade font-size para ambos, mas use o valor 40px para h1 e 30px para h2.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 63 -->
+Adicione um elemento de rodapé abaixo do elemento principal, onde você pode adicionar algumas informações adicionais.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 64 -->
+Dentro do rodapé, adicione um elemento p. Em seguida, aninhe um elemento âncora (a) no p vinculado a https://www.freecodecamp.org e tenha o texto Visite nosso site.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 65 -->
+Adicione um segundo elemento p abaixo daquele com o link e dê a ele o texto 123 Free Code Camp Drive.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 66 -->
+Você pode usar um elemento hr para exibir um divisor entre seções de conteúdo diferente.
+
+Primeiro, adicione um elemento hr entre o elemento p com a classe estabelecida e o primeiro elemento de seção. Observe que os elementos hr fecham automaticamente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 67 -->
+As propriedades padrão de um elemento hr farão com que ele apareça como uma linha fina cinza claro. Você pode alterar a altura da linha especificando um valor para a propriedade height.
+
+Altere a altura do elemento hr para 3px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 68 -->
+Altere a cor de fundo do elemento hr para marrom para que corresponda à cor dos grãos de café.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 69 -->
+Observe a cor cinza ao longo das bordas da linha. Essas arestas são conhecidas como fronteiras. Cada lado de um elemento pode ter uma cor diferente ou podem ser todos iguais.
+
+Faça com que todas as bordas do elemento hr tenham a mesma cor do plano de fundo usando a propriedade border-color.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 70 -->
+Observe como a espessura da linha parece maior? O valor padrão de uma propriedade chamada border-width é 1px para todas as bordas dos elementos hr. Ao alterar a borda para a mesma cor do fundo, a altura total da linha é de 5px (3px mais a largura da borda superior e inferior de 1px).
+
+Altere a propriedade de altura de hr para 2px, de modo que a altura total dele se torne 4px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 71 -->
+Vá em frente e adicione outro elemento hr entre o elemento principal e o elemento de rodapé.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 72 -->
+Para criar um pouco mais de espaço ao redor do menu, adicione 20px de espaço na parte interna do elemento body usando a propriedade padding.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 73 -->
+Focando nos itens do cardápio e nos preços, há uma lacuna bastante grande entre cada linha.
+
+Direcione todos os elementos p aninhados em elementos com a classe chamada item e defina suas margens superior e inferior como 5px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 74 -->
+Usando o mesmo seletor de estilo da etapa anterior, aumente o tamanho da fonte dos itens e preços usando um valor de 18px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 75 -->
+Alterar a margem inferior para 5px parece ótimo. No entanto, agora o espaço entre o item de menu Cinnamon Roll e o segundo elemento hr não corresponde ao espaço entre o elemento hr superior e o título Café.
+
+Adicione mais espaço criando uma classe chamada bottom-line usando 25px para a propriedade margin-top.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 76 -->
+Agora adicione a classe bottom-line ao segundo elemento hr para que o estilo seja aplicado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 77 -->
+Em seguida, você definirá o estilo do elemento de rodapé. Para manter o CSS organizado, adicione um comentário no final de estilos.css com o texto FOOTER.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 78 -->
+Descendo para o elemento de rodapé, faça com que todo o texto tenha um valor de 14px para o tamanho da fonte.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 79 -->
+A cor padrão de um link que ainda não foi clicado normalmente é azul. A cor padrão de um link que já foi visitado em uma página normalmente é roxa.
+
+Para deixar os links de rodapé da mesma cor, independentemente de um link ter sido visitado, use um seletor de tipo para o elemento âncora (a) e use o valor preto para a propriedade color.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 80 -->
+Você altera as propriedades de um link quando o link foi realmente visitado usando um pseudo-seletor que se parece com a:visited { propertyName: propertyValue; }.
+
+Alterar a cor do rodapé Visite nosso site para ficar cinza quando um usuário visitar o link.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 81 -->
+Você altera as propriedades de um link quando o mouse passa sobre eles usando um pseudo-seletor que se parece com a:hover { propertyName: propertyValue; }.
+
+Alterar a cor do rodapé Visite nosso site para ficar marrom quando um usuário passar o mouse sobre ele
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 82 -->
+Você altera as propriedades de um link quando o link está sendo clicado usando um pseudo-seletor que se parece com a:active { propertyName: propertyValue; }.
+
+Alterar a cor do rodapé Visite nosso site para ficar branco quando clicado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 83 -->
+Para manter o mesmo tema de cores que você já usa (preto e marrom), mude a cor de quando o link é visitado para preto e use marrom para quando o link for realmente clicado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 84 -->
+O texto do menu CAMPER CAFE tem um espaço diferente na parte superior do espaço do endereço na parte inferior do menu. Isso ocorre porque o navegador possui alguma margem superior padrão para o elemento h1.
+
+Altere a margem superior do elemento h1 para 0 para remover toda a margem superior.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 85 -->
+Para remover parte do espaço vertical entre o elemento h1 e o texto Est. 2020, altere a margem inferior de h1 para 15px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 86 -->
+Agora o espaçamento superior parece bom. O espaço abaixo do endereço na parte inferior do menu é um pouco maior que o espaço na parte superior do menu e o elemento h1.
+
+Para diminuir o espaço de margem padrão abaixo do elemento address p, crie um seletor de classe chamado address e use o valor 5px para a propriedade margin-bottom.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 87 -->
+Agora aplique a classe de endereço ao elemento p contendo o endereço 123 Free Code Camp Drive.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 88 -->
+O menu parece bom, mas além da imagem de fundo dos grãos de café, é principalmente apenas texto.
+
+No título Café, adicione uma imagem usando o URL https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg. Dê à imagem um valor alternativo de ícone de café.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 89 -->
+A imagem que você adicionou não está centralizada horizontalmente como o título Café acima dela. Os elementos img são elementos embutidos "semelhantes".
+
+Para fazer a imagem se comportar como elementos de título (que são no nível do bloco), crie um seletor de tipo img e use o bloco de valor para a propriedade display e use os valores margin-left e margin-right aplicáveis para centralizá-lo horizontalmente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 90 -->
+Adicione uma última imagem sob o título Sobremesas usando o URL https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg. Dê à imagem um valor alternativo de ícone de pizza.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 91 -->
+Seria bom se o espaço vertical entre os elementos h2 e seus ícones associados fosse menor. Os elementos h2 têm espaço de margem superior e inferior padrão, então você pode alterar a margem inferior dos elementos h2 para 0 ou outro número.
+
+Existe uma maneira mais fácil: basta adicionar uma margem superior negativa aos elementos img para retirá-los de suas posições atuais. Valores negativos são criados usando um - na frente do valor. Para concluir este projeto, vá em frente e use uma margem superior negativa de 25px no seletor de tipo img.

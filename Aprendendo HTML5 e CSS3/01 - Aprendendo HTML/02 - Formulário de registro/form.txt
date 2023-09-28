@@ -1,0 +1,416 @@
+<!-- Passo 01 -->
+Bem-vindo ao projeto Formulário de Inscrição! Comece adicionando a declaração html !DOCTYPE na parte superior do documento para que o navegador saiba que tipo de documento está lendo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 02 -->
+Abaixo de DOCTYPE, adicione um elemento html com um atributo lang definido como en, para que você tenha um local para começar a colocar algum código.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 03 -->
+Em seguida, adicione tags de abertura e fechamento de cabeçalho e corpo ao elemento html.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 04 -->
+Adicione um título e um metaelemento ao cabeçalho. Dê ao seu projeto o título de Formulário de Registro e dê um atributo charset com um valor UTF-8 ao seu metaelemento.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo  05 -->
+Aninhe um elemento de link de fechamento automático dentro do elemento head. Dê a ele um atributo rel com valor de folha de estilo e um atributo href com valor de estilos.css.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 06 -->
+Dentro do corpo, forneça um contexto de título para o conteúdo, adicionando um h1 com o texto Formulário de Registro.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 07 -->
+Abaixo do título, use o seguinte texto dentro de um elemento de parágrafo para incentivar os usuários a se registrarem:
+
+Por favor preencha este formulário com as informações necessárias
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 08 -->
+A unidade vh significa altura da janela de visualização e é relativa a 1% da altura da janela de visualização.
+
+É hora de enfeitar o projeto com algum CSS. Comece dando ao corpo uma largura de 100% e uma altura de 100vh.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 09 -->
+Agora, livre-se da barra de rolagem horizontal, definindo como 0 a margem padrão do corpo adicionada por alguns navegadores.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 10 -->
+Isso é melhor. Agora, torne o fundo agradável aos olhos, alterando a cor de fundo do corpo para #1b1b32. Depois, para ver o texto, mude a cor para #f5f6f7.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 11 -->
+Conforme sugerido pelo título, você está criando um formulário. Portanto, após o elemento p, insira um formulário com um atributo de ação direcionado a https://register-demo.freecodecamp.org.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 12 -->
+O atributo method especifica como enviar dados de formulário para a URL especificada no atributo action. Os dados do formulário podem ser enviados através de uma solicitação GET como parâmetros de URL (com método = "get") ou através de uma solicitação POST como dados no corpo da solicitação (com método = "post").
+
+Defina o atributo method para enviar os dados do seu formulário por meio de uma solicitação POST.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 13 -->
+Como o formulário terá três seções distintas, adicione três elementos fieldset dentro do elemento form.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 14 -->
+O primeiro conjunto de campos conterá campos de nome, email e senha. Comece adicionando quatro elementos de rótulo ao primeiro conjunto de campos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 15 -->
+Adicione o seguinte texto aos elementos do rótulo:
+
+Digite seu primeiro nome:
+Digite seu sobrenome:
+Digite seu e-mail:
+Criar uma nova senha:
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 16 -->
+A unidade rem significa root em e é relativa ao tamanho da fonte do elemento html.
+
+Como os elementos do rótulo estão embutidos por padrão, eles são todos exibidos lado a lado na mesma linha, dificultando a leitura do texto. Para fazê-los aparecer em linhas separadas, adicione display: block ao elemento label e adicione uma margem de 0,5rem 0, para separá-los um do outro.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 17 -->
+Aninhe um elemento de entrada em cada rótulo. Certifique-se de adicionar cada entrada após o texto do rótulo e incluir um espaço após os dois pontos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 18 -->
+Seguindo as práticas recomendadas de acessibilidade, vincule os elementos de entrada e os elementos de rótulo usando o atributo for.
+
+Use nome, sobrenome, email e nova senha como valores para os respectivos atributos de id.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 19 -->
+Especificar o atributo type de um elemento de formulário é importante para que o navegador saiba que tipo de dados deve esperar. Se o tipo não for especificado, o navegador usará texto como padrão.
+
+Dê aos dois primeiros elementos de entrada um atributo de tipo de texto, o terceiro um atributo de tipo de email e o quarto um atributo de tipo de senha.
+
+O tipo de e-mail permite apenas e-mails com @ e . no domínio. O tipo de senha obscurece a entrada e avisa se o site não usa HTTPS.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 20 -->
+O primeiro elemento de entrada com um tipo de envio é automaticamente definido para enviar o elemento pai mais próximo do formulário.
+
+Para lidar com o envio do formulário, após o último elemento fieldset adicione um elemento input com o atributo type definido como submit e o atributo value definido como Submit.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 21 -->
+Neste ponto, você deverá ser capaz de enviar o formulário. No entanto, você pode notar que não acontece muita coisa.
+
+Para tornar o formulário mais interativo, adicione o atributo obrigatório aos elementos de entrada no primeiro conjunto de campos.
+
+Agora, se você tentar enviar o formulário sem preencher os campos obrigatórios, verá uma mensagem de erro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 22 -->
+Certos valores de atributos de tipo vêm com validação de formulário integrada. Por exemplo, type="email" exige que o valor seja um endereço de email válido.
+
+Adicione validação personalizada ao elemento de entrada de senha, adicionando um atributo minlength com um valor de 8. Isso evita o envio de entradas com menos de 8 caracteres.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 23 -->
+Com type="password" você pode usar o atributo padrão para definir uma expressão regular que a senha deve corresponder para ser considerada válida.
+
+Adicione um atributo padrão ao elemento de entrada de senha para exigir a correspondência de entrada: [a-z0-5]{8,}
+
+A expressão acima é uma expressão regular que corresponde a oito ou mais letras minúsculas ou aos dígitos de 0 a 5. Em seguida, remova o atributo minlength e experimente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 24 -->
+Vamos para a próxima parte do formulário de inscrição. Esta seção perguntará o tipo de conta que o usuário está abrindo e confirmará que o usuário leu os termos e condições.
+
+Comece adicionando três elementos de rótulo ao segundo conjunto de campos.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 25 -->
+Os usuários poderão escolher uma conta pessoal ou uma conta comercial.
+
+Para fazer isso, dentro de cada um dos dois primeiros elementos do rótulo, adicione um elemento de entrada com type="radio".
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 26 -->
+Para os termos e condições, adicione uma entrada com um tipo de caixa de seleção ao terceiro elemento do rótulo. Torne este elemento de entrada obrigatório porque os usuários não devem se inscrever sem ler os termos e condições.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 27 -->
+Dentro de cada elemento de rótulo correspondente e imediatamente após o elemento de entrada, adicione um espaço e adicione o seguinte texto:
+
+Conta pessoal
+Conta de negócios
+eu aceito os termos e condições
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 28 -->
+Você deseja que apenas uma entrada de rádio seja selecionável por vez. Porém, o formulário não sabe que as entradas de rádio estão relacionadas.
+
+Para relacionar as entradas de rádio, atribua a elas o mesmo atributo de nome com um valor de tipo de conta. Agora não é possível selecionar as duas entradas de rádio ao mesmo tempo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 29 -->
+Siga as práticas recomendadas de acessibilidade vinculando os elementos de entrada e os elementos de rótulo no segundo conjunto de campos.
+
+Use conta pessoal, conta comercial e termos e condições como valores para os respectivos atributos de id.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 30 -->
+Para finalizar este conjunto de campos, vincule os termos e condições do texto no terceiro rótulo ao seguinte local:
+
+https://www.freecodecamp.org/news/terms-of-service/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 31 -->
+Passando para o conjunto de campos final. E se você quisesse permitir que um usuário carregasse uma foto de perfil?
+
+Bem, o arquivo do tipo de entrada permite exatamente isso. Adicione um rótulo com o texto Carregar uma foto de perfil: e aninhe uma entrada aceitando o upload de um arquivo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 32 -->
+Adicione outro rótulo após o primeiro, com o texto Insira sua idade (anos): . Em seguida, aninhe uma entrada com o tipo de número.
+
+Em seguida, adicione um atributo min à entrada com valor 13 porque usuários menores de 13 anos não devem se registrar. Além disso, os usuários provavelmente não terão mais de 120 anos; adicione um atributo max com um valor de 120.
+
+Agora, se alguém tentar enviar o formulário com valores fora do intervalo, aparecerá um aviso e o formulário não será enviado. De uma chance.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 33 -->
+Adicionar um menu suspenso ao formulário é fácil com o elemento select. O elemento select é um contêiner para um grupo de elementos de opção, e o elemento de opção atua como um rótulo para cada opção suspensa. Ambos os elementos requerem tags de fechamento.
+
+Comece adicionando um elemento select abaixo dos dois elementos do rótulo. Em seguida, aninhe 5 elementos de opção dentro do elemento selecionado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 34 -->
+Aninhe o elemento select (com seus elementos de opção) dentro de um elemento de rótulo com o texto Como você ouviu falar de nós?. O texto deve vir antes do elemento select.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 35 -->
+As opções suspensas estão vazias no momento. Para fornecer conteúdo a eles, adicione o seguinte texto a cada elemento de opção subsequente:
+
+(selecione um)
+Notícias freeCodeCamp
+Canal freeCodeCamp no YouTube
+Fórum freeCodeCamp
+Outro
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 36 -->
+Enviar o formulário com uma opção selecionada não enviaria um valor útil ao servidor. Como tal, cada opção precisa receber um atributo de valor. Sem isso, o conteúdo do texto da opção será enviado ao servidor.
+
+Dê à primeira opção um valor de "" e os elementos de opção subsequentes valorizam atributos de 1 a 4.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 37 -->
+O elemento textarea atua como um elemento de entrada do tipo text, mas vem com o benefício adicional de poder receber texto multilinhas e um número inicial de linhas e colunas de texto.
+
+Os usuários poderão se registrar com uma biografia. Adicione um rótulo com o texto Forneça uma biografia: no final do conjunto de campos. Adicione um elemento textarea dentro do elemento label. Observe que a textarea requer uma tag de fechamento.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 38 -->
+Vincule os elementos de formulário aplicáveis ​​e seus elementos de rótulo.
+
+Use foto de perfil, idade, referenciador e biografia como valores para os respectivos atributos de id.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 39 -->
+A área de texto parece muito pequena. Para dar um tamanho inicial, você pode adicionar os atributos rows e cols.
+
+Adicione um tamanho inicial de 3 linhas e 30 colunas.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 40 -->
+Para dar aos Campers uma ideia do que colocar em sua biografia, o atributo placeholder é usado. O espaço reservado aceita um valor de texto, que é exibido até o usuário começar a digitar.
+
+Dê à área de texto um espaço reservado para Eu gosto de programar na praia....
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 41 -->
+Com envios de formulários, é útil e uma boa prática fornecer a cada elemento que pode ser enviado um atributo de nome. Este atributo é utilizado para identificar o elemento no envio do formulário.
+
+Dê a cada elemento que pode ser enviado um atributo de nome exclusivo de sua escolha, exceto para as duas entradas de rádio.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 42 -->
+O HTML do formulário de registro está finalizado. Agora você pode enfeitar um pouco.
+
+Comece alterando a fonte para Tahoma e o tamanho da fonte para 16px no corpo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 43 -->
+Centralize os elementos h1 e p dando-lhes uma margem de 1em auto. Em seguida, alinhe o texto também no centro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 44 -->
+Centralize o elemento do formulário, atribuindo-lhe uma margem de 0 automático. Em seguida, fixe seu tamanho para uma largura máxima de 500px e uma largura mínima de 300px. Entre esse intervalo, permita que ele tenha uma largura de 60vw.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 45 -->
+Durante o desenvolvimento, é útil ver as bordas padrão do fieldset. No entanto, eles fazem o conteúdo parecer muito separado.
+
+Remova a borda e adicione 2rem de preenchimento apenas na parte superior e inferior de cada conjunto de campos. Certifique-se de remover o preenchimento da esquerda e da direita.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 46 -->
+Para dar um pouco de separação aos elementos do fieldset, selecione-os e dê-lhes uma borda inferior de 3px sólido #3b3b4f.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 47 -->
+A borda do último elemento do fieldset parece um pouco deslocada. Você pode selecionar o último elemento de um tipo específico usando a pseudoclasse CSS last-of-type, assim:
+
+p: último do tipo { }
+
+Isso selecionará o último elemento p. Crie um novo seletor que tenha como alvo o último elemento do conjunto de campos e defina seu limite inferior como nenhum.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 48 -->
+Seria melhor que o texto do rótulo aparecesse acima dos elementos do formulário.
+
+Selecione todos os elementos de entrada, área de texto e seleção e faça com que eles ocupem toda a largura de seus elementos pais.
+
+Além disso, adicione 10px de margem ao topo dos elementos selecionados. Defina as outras margens como 0.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 49 -->
+Para o segundo conjunto de campos, você deseja que o texto de entrada e o rótulo apareçam na mesma linha.
+
+Comece dando aos elementos de entrada no segundo conjunto de campos uma classe inline.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 50 -->
+Selecione apenas os elementos .inline e atribua-lhes largura de unset. Isso removerá a regra anterior que definia todos os elementos de entrada como largura: 100%.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 51 -->
+Adicione algum espaço entre os elementos .inline e o texto do rótulo, dando uma margem direita de 0,5em. Além disso, defina todas as outras margens como 0.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 52 -->
+Se você olhar bem de perto, notará que os elementos .inline estão muito altos na linha.
+
+Para combater isso, defina a propriedade vertical-align como middle.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 53 -->
+Para fazer com que os elementos input e textarea se misturem com o tema de fundo, defina sua cor de fundo como #0a0a23. Em seguida, dê a eles uma borda sólida de 1px com a cor #0a0a23.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 54 -->
+Atualmente, se você digitar os elementos input ou textarea, não conseguirá ver o texto. Além disso, sua altura é muito pequena para ser fácil de usar.
+
+Corrija isso definindo a cor como #ffffff e definindo a altura mínima para 2em.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 55 -->
+Você deseja que o elemento select permaneça com um fundo branco, mas agora ele não está obtendo a mesma altura mínima dos elementos input e textarea.
+
+Mova a propriedade e o valor min-height para que todos os três tipos de elemento tenham o mesmo valor min-height e o elemento selecionado ainda tenha um fundo branco.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 56 -->
+Para definir o estilo do botão de envio, você pode usar um seletor de atributos, que seleciona um elemento com base no valor do atributo fornecido. Aqui está um exemplo:
+
+entrada[nome="senha"]
+
+O acima seleciona elementos de entrada com um valor de atributo de nome de senha.
+
+Agora, use o seletor de atributos para estilizar o botão de envio com uma exibição de bloco e uma largura de 60%.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 57 -->
+Com uma exibição de bloco, o botão enviar fica alinhado com a borda esquerda de seu pai.
+
+Use a mesma técnica usada para centralizar o formulário para centralizar o botão de envio.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 58 -->
+Para deixar o botão de envio mais alinhado com o restante do formulário, dê a ele a mesma altura dos demais campos (2em). Além disso, aumente o tamanho da fonte para 1,1rem.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 59 -->
+Para fazer com que o botão de envio pareça mais distinto, dê a ele uma cor de fundo #3b3b4f e uma cor de borda branca.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 60 -->
+Por último, para o botão enviar, você deseja separá-lo do conjunto de campos acima e ajustar sua largura para nunca ficar abaixo de 300px.
+
+Altere a propriedade margin para incluir 1em na parte superior e inferior, deixando as margens direita e esquerda definidas como automáticas. Em seguida, defina a largura conforme descrito acima.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 61 -->
+A maioria dos navegadores injeta suas próprias propriedades e valores CSS padrão para diferentes elementos. Se você olhar com atenção, poderá notar que a entrada do arquivo é menor do que os outros elementos de entrada de texto. Por padrão, um preenchimento de 1px 2px é fornecido aos elementos de entrada que você pode digitar.
+
+Usando outro seletor de atributos, estilize a entrada com um tipo de arquivo para ter o mesmo preenchimento que os outros elementos de entrada.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 62 -->
+Falando em preenchimento, o botão enviar fica na parte inferior do elemento do formulário. Adicione 2em de preenchimento apenas na parte inferior do formulário.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 63 -->
+
+

@@ -1,0 +1,730 @@
+<!-- Passo 1 -->
+Como você viu nos projetos anteriores, as páginas da web devem começar com uma declaração html DOCTYPE, seguida por um elemento html.
+
+Adicione uma declaração HTML DOCTYPE na parte superior do documento e um elemento HTML depois disso. Dê ao elemento html um atributo lang com en como valor.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 2 -->
+Aninhe um elemento head dentro do elemento html. Logo após o elemento head, adicione um elemento body.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 3 -->
+Lembre-se de que o elemento title fornece aos mecanismos de pesquisa informações extras sobre a página. Ele também exibe o conteúdo desse elemento de título de mais duas maneiras:
+
+na barra de título quando a página está aberta
+na guia do navegador da página quando você passa o mouse sobre ela. Mesmo que essa guia não esteja ativa, quando você passa o mouse sobre ela, o texto do título é exibido.
+Dentro do elemento head, aninhe um elemento title com o texto Marcadores coloridos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 4 -->
+Para informar aos navegadores como codificar caracteres em sua página, defina o conjunto de caracteres como utf-8. utf-8 é um conjunto de caracteres universal que inclui quase todos os caracteres de todas as línguas humanas.
+
+Dentro do elemento head, aninhe um metaelemento com o atributo charset definido como utf-8. Lembre-se de que os metaelementos fecham automaticamente e não precisam de uma tag de fechamento.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 5 -->
+Você pode ter vários metaelementos de fechamento automático em uma página da web. Cada metaelemento adiciona informações sobre a página que não podem ser expressas por outros elementos HTML.
+
+Adicione outro metaelemento de fechamento automático dentro do head. Dê a ele um atributo de nome definido como viewport e um atributo de conteúdo definido como largura=largura do dispositivo, escala inicial=1,0 para que sua página tenha a mesma aparência em todos os dispositivos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 6 -->
+Agora você está pronto para começar a adicionar conteúdo à página.
+
+Dentro do corpo, aninhe um elemento h1 com o texto CSS Color Markers.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 7 -->
+Neste projeto você trabalhará com um arquivo CSS externo para estilizar a página. Já criamos um arquivo estilos.css para você. Mas antes de poder usá-lo, você precisará vinculá-lo à página.
+
+Aninhe um elemento link dentro do elemento head. Dê a ele um atributo rel definido como folha de estilo e um atributo href definido como estilos.css.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 8 -->
+Agora que seu arquivo CSS externo está configurado, você pode começar a estilizar a página.
+
+Como lembrete, veja como direcionar um elemento de parágrafo e alinhá-lo à direita:
+
+p {
+  alinhamento de texto: certo;
+}
+
+Crie uma nova regra CSS direcionada ao elemento h1 e defina sua propriedade text-align como center.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 9 -->
+Agora você adicionará alguns elementos que eventualmente estilizará em marcadores coloridos.
+
+Primeiro, dentro do elemento body, adicione um elemento div e defina seu atributo de classe como container. Certifique-se de que o elemento div esteja abaixo do elemento h1.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 10 -->
+A seguir, dentro do elemento div, adicione outro elemento div e atribua a ele uma classe de marcador.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 11 -->
+É hora de adicionar um pouco de cor ao marcador. Lembre-se de que uma maneira de adicionar cor a um elemento é usar uma palavra-chave de cor como preto, ciano ou amarelo.
+
+Como lembrete, veja como direcionar a classe freecodecamp:
+
+.freecodecamp {
+  
+}
+
+Crie uma nova regra CSS direcionada ao marcador de classe e defina sua propriedade background-color como vermelho.
+
+Nota: Você não verá nenhuma alteração após adicionar o CSS.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 12 -->
+A cor de fundo foi aplicada, mas como o elemento div do marcador não possui conteúdo, ele não possui altura por padrão.
+
+Na sua regra CSS .marker, defina a propriedade height como 25px e a propriedade width como 200px
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 13 -->
+Seu marcador ficaria melhor se estivesse centralizado na página. Uma maneira fácil de fazer isso é com a propriedade abreviada margin.
+
+No último projeto, você definiu a área de margem dos elementos separadamente com propriedades como margin-top e margin-left. A propriedade abreviada de margem facilita a definição de múltiplas áreas de margem ao mesmo tempo.
+
+Para centralizar seu marcador na página, defina sua propriedade de margem como automática. Isso define margin-top, margin-right, margin-bottom e margin-left, todos como automáticos.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 14 -->
+Agora que você tem um marcador centralizado com cor, é hora de adicionar os outros marcadores.
+
+No contêiner div, adicione mais dois elementos div e atribua a cada um deles uma classe de marcador.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 15 -->
+Embora você tenha três elementos div marcadores separados, eles se parecem com um grande retângulo. Você deve adicionar algum espaço entre eles para facilitar a visualização de cada elemento.
+
+Quando a propriedade abreviada margin tem dois valores, ela define margin-top e margin-bottom para o primeiro valor, e margin-left e margin-right para o segundo valor.
+
+Na sua regra CSS .marker, defina a propriedade margin como 10px auto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 16 -->
+Para dar cores diferentes aos marcadores, você precisará adicionar uma classe exclusiva a cada um. Várias classes podem ser adicionadas a um elemento listando-as no atributo class e separando-as com um espaço. Por exemplo, o seguinte adiciona as classes animal e dog a um elemento div.
+
+<div class="animal cachorro">
+
+Se você adicionar várias classes a um elemento HTML, os estilos das primeiras classes listadas poderão ser substituídos por classes posteriores.
+
+Para começar, adicione a classe um ao primeiro elemento div do marcador.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 17 -->
+Em seguida, remova a propriedade background-color e seu valor da regra CSS .marker.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 18 -->
+Em seguida, crie uma nova regra CSS direcionada à classe um e defina sua propriedade background-color como vermelho.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 19 -->
+Adicione a classe dois ao segundo div do marcador e adicione a classe três ao terceiro div do marcador.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 20 -->
+Crie uma regra CSS direcionada à classe dois e defina sua propriedade background-color como verde.
+
+Além disso, crie uma regra CSS separada que tenha como alvo a classe três e defina sua cor de fundo como azul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 21 -->
+Existem dois modelos de cores principais: o modelo RGB aditivo (vermelho, verde, azul) usado em dispositivos eletrônicos e o modelo CMYK subtrativo (ciano, magenta, amarelo, preto) usado na impressão.
+
+Neste projeto, você trabalhará com o modelo RGB. Isso significa que as cores começam como preto e mudam à medida que diferentes níveis de vermelho, verde e azul são introduzidos. Uma maneira fácil de ver isso é com a função CSS rgb.
+
+Crie uma nova regra CSS direcionada ao contêiner da classe e defina sua cor de fundo como preto com rgb(0, 0, 0)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 22 -->
+Uma função é um trecho de código que pode receber uma entrada e executar uma ação específica. A função CSS rgb aceita valores, ou argumentos, para vermelho, verde e azul e produz uma cor:
+
+rgb(vermelho, verde, azul);
+
+Cada valor de vermelho, verde e azul é um número de 0 a 255. 0 significa que há 0% dessa cor e é preto. 255 significa que há 100% dessa cor.
+
+Na regra CSS .one, substitua a palavra-chave color red pela função rgb. Para a função rgb, defina o valor do vermelho como 255, o valor do verde como 0 e o valor do azul como 0.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 23 -->
+Observe que a cor de fundo do seu marcador ainda é vermelha. Isso ocorre porque você define o valor vermelho da função rgb para o máximo de 255, ou 100% vermelho, e define os valores verde e azul para 0.
+
+Agora use a função rgb para definir as outras cores.
+
+Na regra CSS .two, use a função rgb para definir a cor de fundo como o valor máximo para verde e 0 para os outros valores. E na regra CSS .três, use a função rgb para definir a cor de fundo como o valor máximo para azul e 0 para os outros valores.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 24 -->
+Embora os marcadores vermelho e azul tenham a mesma aparência, o verde está muito mais claro do que antes. Isso ocorre porque a palavra-chave cor verde tem, na verdade, um tom mais escuro e está a meio caminho entre o preto e o valor máximo do verde.
+
+Na regra CSS .two, defina o valor verde na função rgb como 127 para diminuir sua intensidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 25 -->
+Agora adicione um pouco mais de espaço vertical entre seus marcadores e a borda do elemento contêiner em que eles estão.
+
+Na regra CSS .container, use a propriedade de preenchimento abreviado para adicionar 10px de preenchimento superior e inferior e defina o preenchimento esquerdo e direito como 0. Isso funciona de forma semelhante à propriedade de margem abreviada que você usou anteriormente.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 26 -->
+No modelo de cores RGB aditivo, as cores primárias são cores que, quando combinadas, criam o branco puro. Mas para que isso aconteça, cada cor precisa estar em sua intensidade máxima.
+
+Antes de combinar as cores, defina o marcador verde novamente para verde puro. Para a função rgb na regra CSS .two, defina o verde de volta para o valor máximo de 255.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 27 -->
+Agora que você tem as cores RGB primárias, é hora de combiná-las.
+
+Para a função rgb na regra .container, defina os valores vermelho, verde e azul para no máximo 255.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 28 -->
+Cores secundárias são as cores que você obtém quando combina cores primárias. Você deve ter notado algumas cores secundárias na última etapa ao alterar os valores de vermelho, verde e azul.
+
+Para criar a primeira cor secundária, amarelo, atualize a função rgb na regra CSS .one para combinar vermelho puro e verde puro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 29 -->
+Para criar a próxima cor secundária, ciano, atualize a função rgb na regra CSS .two para combinar verde puro e azul puro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 30 -->
+Para criar a cor secundária final, magenta, atualize a função rgb na regra CSS .três para combinar azul puro e vermelho puro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 31 -->
+Agora que você está familiarizado com as cores secundárias, aprenderá como criar cores terciárias. As cores terciárias são criadas combinando uma cor primária com uma cor secundária próxima.
+
+Para criar a cor terciária laranja, atualize a função rgb na regra CSS .one para que o vermelho esteja no valor máximo e defina o verde como 127.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 32 -->
+Observe que, para criar o laranja, foi necessário aumentar a intensidade do vermelho e diminuir a intensidade dos valores RGB do verde. Isso ocorre porque o laranja é a combinação do vermelho e do amarelo.
+
+Para criar a cor terciária verde primavera, combine ciano com verde. Atualize a função rgb na regra CSS .two para que o verde esteja no valor máximo e defina o azul como 127.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 33 -->
+E para criar a cor terciária violeta, combine magenta com azul. Atualize a função rgb na regra CSS .três para que o azul esteja no valor máximo e defina o vermelho como 127.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 34 -->
+Existem mais três cores terciárias: verde chartreuse (verde + amarelo), azul (azul + ciano) e rosa (vermelho + magenta).
+
+Para criar o verde chartreuse, atualize a função rgb na regra CSS .one para que o vermelho fique em 127 e defina o verde como o valor máximo.
+
+Para o azul, atualize a função rgb na regra CSS .two para que o verde fique em 127 e o azul esteja no valor máximo.
+
+E para rosa, que às vezes é chamado de rosa brilhante, atualize a função rgb na regra CSS .três para que o azul fique em 127 e o vermelho esteja no valor máximo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 35 -->
+Agora que você examinou todas as cores primárias, secundárias e terciárias em uma roda de cores, será mais fácil entender outros conceitos da teoria das cores e como eles impactam o design.
+
+Primeiro, nas regras CSS .one, .two e .três, ajuste os valores na função rgb para que a cor de fundo de cada elemento seja definida como preto puro. Lembre-se de que a função rgb usa o modelo de cores aditivas, onde as cores começam em preto e mudam conforme os valores de vermelho, verde e azul aumentam.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 36 -->
+Uma roda de cores é um círculo onde cores ou matizes semelhantes estão próximos uns dos outros e os diferentes estão mais distantes. Por exemplo, o vermelho puro está entre os tons rosa e laranja.
+
+Duas cores opostas uma da outra no círculo cromático são chamadas de cores complementares. Se duas cores complementares forem combinadas, elas produzem o cinza. Mas quando colocadas lado a lado, essas cores produzem forte contraste visual e parecem mais brilhantes.
+
+Na função rgb da regra CSS .one, defina o valor vermelho para no máximo 255 para produzir vermelho puro. Na função rgb para a regra CSS .two, defina os valores de verde e azul para o máximo de 255 para produzir ciano.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 37 -->
+Observe que as cores vermelha e ciano são muito brilhantes, uma ao lado da outra. Esse contraste pode distrair se for usado demais em um site e pode dificultar a leitura do texto se for colocado em um fundo de cor complementar.
+
+É uma prática recomendada escolher uma cor como dominante e usar sua cor complementar como destaque para chamar a atenção para determinado conteúdo da página.
+
+Primeiro, na regra h1, use a função rgb para definir sua cor de fundo como ciano.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 38 -->
+A seguir, na regra CSS .one, use a função rgb para definir a cor de fundo como preto. E na regra CSS .two, use a função rgb para definir a cor de fundo como vermelho.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 39 -->
+Observe como seus olhos são naturalmente atraídos pela cor vermelha no centro? Ao projetar um site, você pode usar esse efeito para chamar a atenção para títulos, botões ou links importantes.
+
+Existem várias outras combinações de cores importantes fora das cores complementares, mas você aprenderá isso um pouco mais tarde.
+
+Por enquanto, use a função rgb na regra CSS .two para definir a cor de fundo como preto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 40 -->
+E na regra CSS h1, remova a propriedade e o valor background-color para voltar à cor branca padrão.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 41 -->
+Agora é hora de adicionar outros detalhes aos marcadores, começando pelo primeiro.
+
+No primeiro elemento div do marcador, altere a classe um para vermelho.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 42 -->
+Atualize a regra CSS .one para direcionar a nova classe vermelha.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 43 -->
+E atualize a função rgb na regra CSS .red para que o valor vermelho esteja no máximo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 44 -->
+Em seguida, altere a classe dois para verde na segunda div do marcador e a classe três para azul na terceira div do marcador.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 45 -->
+Atualize o seletor de classe CSS .two para que ele seja direcionado à nova classe verde. E atualize o seletor de classe .three para que ele atinja a nova classe azul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 46 -->
+Uma maneira muito comum de aplicar cor a um elemento com CSS é com valores hexadecimais ou hexadecimais. Embora os valores hexadecimais pareçam complicados, eles são apenas outra forma de valores RGB.
+
+Os valores de cores hexadecimais começam com um caractere # e levam seis caracteres de 0 a 9 e AF. O primeiro par de caracteres representa o vermelho, o segundo par representa o verde e o terceiro par representa o azul. Por exemplo, #4B5320.
+
+No seletor de classe .green, defina a propriedade background-color como um código de cor hexadecimal com os valores 00 para vermelho, FF para verde e 00 azul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 47 -->
+Você já deve estar familiarizado com valores decimais, ou de base 10, que vão de 0 a 9. Valores hexadecimais, ou de base 16, vão de 0 a 9, depois A - F:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+Com cores hexadecimais, 00 é 0% dessa cor e FF é 100%. Portanto, #00FF00 se traduz em 0% vermelho, 100% verde e 0% azul e é igual a rgb(0, 255, 0).
+
+Reduza a intensidade do verde definindo o valor verde da cor hexadecimal para 7F.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 48 -->
+O modelo de cores HSL, ou matiz, saturação e luminosidade, é outra forma de representar cores.
+
+A função CSS hsl aceita 3 valores: um número de 0 a 360 para matiz, uma porcentagem de 0 a 100 para saturação e uma porcentagem de 0 a 100 para luminosidade.
+
+Se você imaginar uma roda de cores, o matiz vermelho está em 0 graus, o verde está em 120 graus e o azul está em 240 graus.
+
+Saturação é a intensidade de uma cor de 0%, ou cinza, a 100% para cor pura. Você deve adicionar o sinal de porcentagem % aos valores de saturação e luminosidade.
+
+Luminosidade é o brilho de uma cor, de 0%, ou preto total, a 100%, branco total, sendo 50% neutro.
+
+Na regra CSS .blue, use a função hsl para alterar a propriedade background-color para azul puro. Defina o matiz para 240, a saturação para 100% e a luminosidade para 50%.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 49 -->
+
+Você aprendeu algumas maneiras de definir cores planas em CSS, mas também pode usar uma transição de cores, ou gradiente, em um elemento.
+
+Um gradiente ocorre quando uma cor faz a transição para outra. A função de gradiente linear CSS permite controlar a direção da transição ao longo de uma linha e quais cores são usadas.
+
+Uma coisa a lembrar é que a função gradiente linear na verdade cria um elemento de imagem e geralmente é combinada com a propriedade background que pode aceitar uma imagem como valor.
+
+Na regra CSS .red, altere a propriedade background-color para background.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 50 -->
+A função gradiente linear é muito flexível – aqui está a sintaxe básica que você usará neste tutorial:
+
+gradiente linear (gradientDirection, color1, color2, ...);
+
+gradienteDirection é a direção da linha usada para a transição. color1 e color2 são argumentos de cores, que são as cores que serão usadas na transição em si. Podem ser de qualquer tipo de cor, incluindo palavras-chave de cores, hexadecimal, rgb ou hsl.
+
+Agora você aplicará um gradiente de vermelho para verde ao longo de uma linha de 90 graus até o primeiro marcador.
+
+Primeiro, na regra CSS .red, defina a propriedade background como linear-gradient() e passe a ela o valor 90deg como gradienteDirection.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 51 -->
+Você usará a função rgb para as cores desse gradiente.
+
+Na função de gradiente linear, use a função rgb para definir o primeiro argumento de cor como vermelho puro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 52 -->
+Você ainda não verá o gradiente porque a função gradiente linear precisa de pelo menos dois argumentos de cor para funcionar.
+
+Na mesma função de gradiente linear, use a função rgb para definir o segundo argumento de cor como verde puro.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 53 -->
+Como você pode ver, a função gradiente linear produziu um gradiente vermelho-verde suave. Embora a função de gradiente linear precise de no mínimo dois argumentos de cores para funcionar, ela pode aceitar muitos argumentos de cores.
+
+Use a função rgb para adicionar azul puro como o terceiro argumento de cor à função de gradiente linear.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 54 -->
+As paradas de cores permitem ajustar onde as cores são colocadas ao longo da linha de gradiente. Eles são uma unidade de comprimento como px ou porcentagens que seguem uma cor na função de gradiente linear.
+
+Por exemplo, neste gradiente vermelho-preto, a transição do vermelho para o preto ocorre no ponto de 90% ao longo da linha do gradiente, de modo que o vermelho ocupa a maior parte do espaço disponível:
+
+gradiente linear (90 graus, vermelho 90%, preto);
+Na função de gradiente linear, adicione uma parada de cor de 75% após o primeiro argumento de cor vermelha. Não adicione interrupções de cores aos argumentos de outras cores.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--  Passo 55 -->
+Agora que você conhece o básico de como a função de gradiente linear e as interrupções de cores funcionam, você pode usá-las para tornar os marcadores mais realistas.
+
+Na função de gradiente linear, defina gradienteDirection como 180deg.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 56 -->
+Em seguida, defina o limite de cor para vermelho em 0%, o limite de cor para verde em 50% e o limite de cor para azul em 100%.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 57 -->
+Agora que as paradas de cores estão definidas, você aplicará diferentes tons de vermelho a cada argumento de cor na função de gradiente linear. As sombras nas bordas superior e inferior do marcador serão mais escuras, enquanto a do meio será mais clara, como se houvesse uma luz acima dela.
+
+Para o primeiro argumento de cor, que atualmente é vermelho puro, atualize a função rgb para que o valor do vermelho seja 122, o valor do verde seja 74 e o valor do azul seja 14.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 58 -->
+Agora modifique o segundo argumento de cor na função de gradiente linear, que atualmente é verde puro.
+
+Atualize a função rgb para que o valor do vermelho seja 245, o valor do verde seja 62 e o valor do azul seja 113.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 59 -->
+Finalmente, modifique o terceiro argumento de cor na função de gradiente linear, que atualmente é azul puro.
+
+Atualize a função rgb para que o valor do vermelho seja 162, o valor do verde seja 27 e o valor do azul seja 27.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 60 -->
+O marcador vermelho parece muito mais realista. Agora você fará o mesmo com o marcador verde, usando uma combinação da função de gradiente linear e cores hexadecimais.
+
+Na regra CSS .green, altere a propriedade background-color para background.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 61 -->
+Para este marcador, você usará códigos de cores hexadecimais para seu gradiente.
+
+Use a função de gradiente linear e defina gradienteDirection como 180deg. E para o primeiro argumento de cor, use um código de cor hexadecimal com os valores 55 para vermelho, 68 para verde e 0D para azul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 62 -->
+Para o segundo argumento de cor, use um código de cor hexadecimal com os valores 71 para vermelho, F5 para verde e 3E para azul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 63 -->
+Parece melhor, mas a borda inferior do marcador verde precisa ser mais escura para adicionar um pouco mais de dimensão.
+
+Na mesma função de gradiente linear, adicione um código de cor hexadecimal com os valores 11 para vermelho, 6C para verde e 31 para azul como o terceiro argumento de cor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 64 -->
+Mesmo sem as interrupções de cores, você deve ter notado que as cores do marcador verde transitam nos mesmos pontos do marcador vermelho. A primeira cor está no início (0%), a segunda está no meio (50%) e a última está no final (100%) da linha de gradiente.
+
+A função de gradiente linear calcula automaticamente esses valores para você e coloca as cores uniformemente ao longo da linha de gradiente por padrão.
+
+Na regra CSS .red, remova as três paradas de cor da função de gradiente linear para limpar um pouco seu código.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 65 -->
+Se nenhum argumento gradienteDirection for fornecido para a função de gradiente linear, ela organizará as cores de cima para baixo ou ao longo de uma linha de 180 graus, por padrão.
+
+Limpe um pouco mais seu código removendo o argumento gradienteDirection de ambas as funções de gradiente linear.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 66 -->
+Agora você aplicará um gradiente ao marcador azul, desta vez usando a função hsl como argumento de cor.
+
+Na regra CSS .blue, altere a propriedade background-color para background.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 67 -->
+Use a função de gradiente linear e passe a função hsl com os valores 186 para matiz, 76% para saturação e 16% para luminosidade como o primeiro argumento de cor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 68 -->
+Como segundo argumento de cor, passe a função hsl com os valores 223 para matiz, 90% para saturação e 60% para luminosidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 69 -->
+E como terceiro argumento de cor, passe a função hsl com os valores 240 para matiz, 56% para saturação e 42% para luminosidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 70 -->
+Agora que os marcadores têm as cores corretas, é hora de construir as mangas dos marcadores. Comece com o marcador vermelho.
+
+Dentro do elemento div do marcador vermelho, crie um novo elemento div e dê a ele uma classe de manga.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 71 -->
+Crie uma nova regra CSS voltada para a capa da classe. Defina a propriedade width como 110px e a propriedade height como 25px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 72 -->
+Para deixar o marcador mais realista, dê à manga uma cor branca transparente.
+
+Primeiro, defina a cor de fundo do elemento da manga como branco.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 73 -->
+A opacidade descreve o quão opaco ou não transparente algo é. Por exemplo, uma parede sólida é opaca e nenhuma luz pode passar através dela. Mas um copo é muito mais transparente e você pode ver através do copo o outro lado.
+
+Com a propriedade CSS opacity, você pode controlar o quão opaco ou transparente é um elemento. Com o valor 0, ou 0%, o elemento será completamente transparente, e com 1,0, ou 100%, o elemento será completamente opaco como é por padrão.
+
+Na regra CSS .sleeve, defina a propriedade opacity como 0,5.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 74 -->
+Outra forma de definir a opacidade de um elemento é com o canal alfa. Semelhante à propriedade de opacidade, o canal alfa controla o quão transparente ou opaca é uma cor.
+
+Você já definiu a opacidade da manga com uma cor nomeada e a propriedade opacity, mas pode adicionar um canal alfa às outras propriedades de cores CSS.
+
+Dentro da regra .sleeve, remova a propriedade e o valor de opacidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 75 -->
+Você já está familiarizado com o uso da função RGB para definir cores. Para adicionar um canal alfa a uma cor RGB, use a função RGBA.
+
+A função rgba funciona exatamente como a função rgb, mas leva mais um número de 0 a 1,0 para o canal alfa:
+
+rgba(redValue, greenValue, blueValue, alphaValue);
+Você também pode usar um canal alfa com cores hsl e hexadecimais. Você verá como fazer isso em breve.
+
+Na regra .sleeve, use a função rgba para definir a propriedade background-color como branco puro com 50% de opacidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 76 -->
+Sua manga parece boa, mas ficaria ainda melhor se fosse posicionada mais para o lado direito do marcador. Uma maneira de fazer isso é adicionar outro elemento antes da manga para empurrá-la para a direita.
+
+Adicione uma nova div com o limite da classe antes do elemento div da manga.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 77 -->
+Crie uma nova regra CSS para atingir o limite de classe. Na nova regra, defina a propriedade width como 60px e a altura como 25px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 78 -->
+Parece que sua manga desapareceu, mas não se preocupe: ela ainda está lá. O que aconteceu é que seu novo boné div está ocupando toda a largura do marcador e empurrando a manga para baixo até a próxima linha.
+
+Isso ocorre porque a propriedade de exibição padrão para elementos div é block. Portanto, quando dois elementos de bloco estão próximos um do outro, eles se empilham como blocos reais. Por exemplo, seus elementos marcadores estão todos empilhados uns sobre os outros.
+
+Para posicionar dois elementos div na mesma linha, defina suas propriedades de exibição como inline-block.
+
+Crie uma nova regra para atingir as classes de boné e manga e defina a exibição como bloco inline.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 79 -->
+No último projeto, você aprendeu um pouco sobre bordas e a propriedade border-color.
+
+Todos os elementos HTML têm bordas, embora geralmente sejam definidos como nenhum por padrão. Com CSS, você pode controlar todos os aspectos da borda de um elemento e definir a borda em todos os lados ou apenas em um lado de cada vez. Para que uma borda fique visível, você precisa definir sua largura e estilo.
+
+Na regra CSS .sleeve, adicione a propriedade border-left-width com o valor 10px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 80 -->
+As bordas têm vários estilos para você escolher. Você pode transformar sua borda em uma linha sólida, mas também pode usar uma linha tracejada ou pontilhada, se preferir. Linhas de borda sólidas são provavelmente as mais comuns.
+
+Na regra CSS .sleeve, adicione a propriedade border-left-style com o valor sólido.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 81 -->
+Sua borda deve estar visível agora. Se nenhuma cor for definida, o preto será usado por padrão.
+
+Mas para tornar seu código mais legível, é melhor definir explicitamente a cor da borda.
+
+Na regra CSS .sleeve, adicione a propriedade border-left-color com o valor preto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 82 -->
+A propriedade abreviada border-left permite definir a largura, o estilo e a cor da borda esquerda ao mesmo tempo.
+
+Aqui está a sintaxe:
+
+borda esquerda: cor do estilo de largura;
+
+Na regra CSS .sleeve, substitua as propriedades border-left-width, border-left-style e border-left-color pela propriedade abreviada border-left. Os valores de largura, estilo e cor da borda esquerda devem ser iguais.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 83 -->
+Seu marcador parece bom. Mas para torná-lo ainda mais realista, você pode alterar o estilo da borda para bordas duplas sólidas.
+
+Para a propriedade abreviada border-left, altere o valor do estilo da borda de sólido para duplo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 84 -->
+A cor preta da sua borda fica bem forte em contraste com a manga mais transparente. Você pode usar um canal alfa para diminuir a opacidade da borda preta.
+
+Para a propriedade abreviada border-left, use a função rgba para definir o valor da cor como preto puro com 75% de opacidade.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 85 -->
+Incrível. Seu marcador vermelho parece bom. Agora tudo que você precisa fazer é adicionar os gorros e mangas aos outros marcadores.
+
+Adicione um boné e uma manga aos marcadores verdes e azuis. Você pode simplesmente copiar os elementos div do marcador vermelho e colá-los nos outros dois marcadores.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 86 -->
+A última coisa que você fará é adicionar uma leve sombra a cada marcador para torná-los ainda mais realistas.
+
+A propriedade box-shadow permite aplicar uma ou mais sombras ao redor de um elemento. Aqui está a sintaxe básica:
+
+box-shadow: cor offsetX offsetY;
+Veja como funcionam os valores offsetX e offsetY:
+
+tanto offsetX quanto offsetY aceitam valores numéricos em px e outras unidades CSS
+um valor positivo de offsetX move a sombra para a direita e um valor negativo a move para a esquerda
+um valor positivo de offsetY move a sombra para baixo e um valor negativo a move para cima
+se você quiser um valor zero (0) para qualquer um ou ambos offsetX e offsetY, não será necessário adicionar uma unidade. Todo navegador entende que zero significa nenhuma alteração.
+A altura e a largura da sombra são determinadas pela altura e largura do elemento ao qual ela é aplicada. Você também pode usar um valor spreadRadius opcional para espalhar o alcance da sombra. Mais sobre isso mais tarde.
+
+Comece adicionando uma sombra simples ao marcador vermelho.
+
+Na regra CSS .red, adicione a propriedade box-shadow com os valores 5px para offsetX, 5px para offsetY e vermelho para cor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 87 -->
+Como você pode ver, você adicionou uma sombra vermelha simples ao redor do marcador, 5 pixels à direita e 5 pixels abaixo.
+
+Mas e se você quisesse posicionar sua sombra no lado oposto? Você pode fazer isso usando valores negativos para offsetX e offsetY.
+
+Atualize os valores da propriedade box-shadow e defina offsetX como -5px e offsetY como -5px.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 88 -->
+Observe que as bordas da sombra são nítidas. Isso ocorre porque existe um valor opcional blurRadius para a propriedade box-shadow:
+
+box-shadow: offsetX offsetY blurRadius color;
+
+Se um valor blurRadius não for incluído, o padrão será 0 e produzirá bordas nítidas. Quanto maior o valor de blurRadius, maior será o efeito de desfoque.
+
+Na regra CSS .green, adicione a propriedade box-shadow com os valores 5px para offsetX, 5px para offsetY, 5px para blurRadius e verde para cor.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 89 -->
+Mas e se você quisesse expandir ainda mais a sombra? Você pode fazer isso com o valor opcional spreadRadius:
+
+box-shadow: offsetX offsetY blurRadius spreadRadius color;
+
+Assim como o blurRadius, o padrão do spreadRadius é 0 se não estiver incluído.
+
+Pratique adicionando uma sombra de 5 pixels diretamente ao redor do marcador azul.
+
+Na regra CSS .blue, adicione a propriedade box-shadow com os valores 0 para offsetX, 0 para offsetY, 0 para blurRadius, 5px para spreadRadius e blue para color.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 90 -->
+Agora que você está familiarizado com a propriedade box-shadow você pode finalizar as sombras, começando com aquela do marcador vermelho.
+
+Na regra CSS .red, atualize os valores da propriedade box-shadow para que offsetX seja 0, offsetY seja 0, blurRadius seja 20px, spreadRadius seja 0 e color seja vermelho. Lembre-se de que você não precisa somar unidades até um valor zero.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 91 -->
+Em seguida, atualize o valor da cor da propriedade box-shadow do marcador vermelho.
+
+Substitua a cor nomeada pela função rgba. Use os valores 83 para vermelho, 14 para verde, 14 para azul e 0,8 para o canal alfa.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 92 -->
+As sombras dos marcadores verdes e azuis terão a mesma posição, desfoque e dispersão. A única diferença serão as cores.
+
+Nas regras CSS .green e .blue, atualize os valores das propriedades box-shadow para que offsetX seja 0, offsetY seja 0, blurRadius seja 20px e spreadRadius seja 0. Deixe as cores verde e azul por enquanto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 93 -->
+Para a propriedade box-shadow do marcador verde, substitua a cor nomeada por um código de cor hexadecimal. Use os valores 3B para vermelho, 7E para verde, 20 para azul e CC para o canal alfa.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Passo 94 -->
+Finalmente, para a propriedade box-shadow do marcador azul, substitua a cor nomeada pela função hsla. Use os valores 223 para matiz, 59% para saturação, 31% para luminosidade e 0,8 para o canal alfa.
+
+E com isso seu conjunto de marcadores coloridos está completo! Bom trabalho.

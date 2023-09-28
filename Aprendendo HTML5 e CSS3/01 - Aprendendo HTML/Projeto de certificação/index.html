@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Formulário de pesquisa</h1>
+    <p id="description">Responda a esta pesquisa para nos ajudar a melhorar nossos serviços</p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+        <div class="form-group">
+            <label for="name-input" id="name-label">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email-input" id="email-label">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form-group">
+            <label for="number-input" id="number-label">Número</label>
+            <input type="number" id="number" placeholder="Digite um número" min="0" max="100">
+        </div>
+        <div class="form-group">
+            <label for="dropdown">Opções</label>
+            <select id="dropdown">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="radio-group">Botões de opção</label>
+            <input type="radio" name="radio" id="radio-1" value="1">
+            <label for="radio-1">Opção 1</label>
+            <input type="radio" name="radio" id="radio-2" value="2">
+            <label for="radio-2">Opção 2</label>
+        </div>
+        <div class="form-group">
+            <label for="checkboxes">Caixas de seleção</label>
+            <input type="checkbox" id="checkbox-1" value="1">
+            <label for="checkbox-1">Opção 1</label>
+            <input type="checkbox" id="checkbox-2" value="2">
+            <label for="checkbox-2">Opção 2</label>
+        </div>
+        <div class="form-group">
+            <label for="textarea">Comentários</label>
+            <textarea id="textarea" rows="3"></textarea>
+        </div>
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+</html>
